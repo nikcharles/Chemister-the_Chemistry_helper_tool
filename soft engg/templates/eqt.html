@@ -1,0 +1,165 @@
+<html>
+<head><title>Chemistry Help
+</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="{{ url_for('static', filename = 'main.js') }}"></script>
+<style type="text/css">
+	body{
+   height: 100vh;
+   background-size: cover;
+   background-position: center;
+   /* background-color: #3f51b5; */
+   /* background-color: #fff; */
+	}
+	*{
+   margin: 0;
+   padding: 0;
+   font-family: Times New Roman;
+}
+
+
+ul{
+   float: right;
+   list-style-type: none;
+   margin-top: 20px;
+}
+
+ul li{
+   display: inline-block; 
+}
+
+ul li a{
+   text-decoration: none;
+   color: #fff;
+   padding: 5px 20px;
+   border: 1px solid transparent;
+   transition: 0.6s ease;
+}
+
+ul li a:hover{
+   background-color: #fff;
+   color: #000;
+}
+
+ul li.active a{
+   background-color: #fff;
+   color: #000;
+}
+
+
+.main{
+max-width:1400px;
+margin: auto;
+}
+
+.button{
+position: absolute;
+top: 71%;
+left: 50%;
+transform: translate(-50%,-50%);
+/* color: #fff; */
+height: 30px;
+width:75px;
+}
+
+.btn{
+/* border: 1px solid #fff; */
+padding: 10px 30px;
+color: #fff;
+text-decoration: none;
+transition: 0.6s ease;
+}
+
+.button:hover{
+   background-color: #fff;
+   color: #000;
+}
+
+.title{
+position: absolute;
+    /* color: #fff; */
+    margin-top: 18%;
+    margin-left: 18%;
+    display: flex;
+}
+.reac{
+    display: grid;
+}
+.sl{
+  background: transparent;
+  color:#000;
+  height: 50px;
+  width:175px;
+  text-align: center;
+}
+</style>
+</head>
+
+<body background="{{ url_for('static', filename = 'nbg.png') }}">
+<!-- <body> -->
+	<div class="bg">
+		
+		<div class="list">
+			<ul>
+            <li class="active"><a href="#">Equation</a></li>
+            <li><a href="/">Home</a></li>
+            <!-- <li><a href="#">Sign In</a></li>
+            <li><a href="#">Register</a></li> -->
+            <li><a href="/about">About</a></li>
+        </ul>
+      </div>
+      <div class="title">
+      <div class="reac">
+         <label for="r1" class = "sl"> Reactant 1</label>
+         <select class="sl" name="r1" id="r1">
+            <option value = "None"> Select an option </option>
+         </select>
+         <label for="w1" class = "sl"> Weight 1</label>
+         <input class="sl" type="number" id="w1" name="w1" placeholder="weight 1">
+      </div>
+
+      <div class="reac">
+         <label for="r2" class = "sl"> Reactant 2</label>
+         <select class="sl" name="r2" id="r2">
+            <option value = "None"> Select an option </option>
+         </select>
+         <label for="w2" class = "sl"> Weight 2</label>
+         <input class="sl" type="number" id="w2" name="w2" placeholder="weight 2">
+      </div>
+
+      <div class="reac">
+         <!-- <select class="sl" name="cat" id="cat">
+            <option>choose a catalyst</option>
+         </select> -->
+         <!-- <input type = "text" class = "sl" name = "cat" id = "cat" value = "catalyst" disabled/> -->
+         <p class = "sl" id = "cat" style="border:2px grey;"> Catalyst</p>
+
+         <img src="{{ url_for('static', filename = 'ar1.png') }}" width="150px">
+      </div>
+
+      <div class="reac">
+         <label for="p1" class = "sl"> Product</label>
+         <select class="sl" name="p1" id="p1">
+            <option value = "None"> Select an option </option>
+         </select>
+         <label for="w3" class = "sl"> Weight 3</label>
+         <input class="sl" type="number" id="w3" name="w3" placeholder="weight 3">
+      </div>
+
+      <div class="reac">
+         <label for="ex" class = "sl"> Extra info</label>
+         <!-- <select class="sl" name="ex" id="ex">
+         </select> -->
+         <textarea class = "sl" id = "ex" name = "ex" disabled>Extra information</textarea>
+      </div>
+   </div>
+    
+   <button class="button" onclick="reset()">
+      <!-- <a href="#" class="btn">Reset</a> -->
+      Reset
+   </button>
+
+   <input type = "number" id = "selected" hidden value = "0"/>
+   
+</body>
+</html>

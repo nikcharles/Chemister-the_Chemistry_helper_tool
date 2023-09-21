@@ -1,0 +1,131 @@
+<html>
+<head><title>Chemistry Help
+</title>
+<style type="text/css">
+	body{
+   height: 100vh;
+   background-size: cover;
+   background-position: center;
+	}
+	*{
+   margin: 0;
+   padding: 0;
+   font-family: Times New Roman;
+}
+
+
+ul{
+   float: right;
+   list-style-type: none;
+   margin-top: 20px;
+}
+
+ul li{
+   display: inline-block; 
+}
+
+ul li a{
+   text-decoration: none;
+   color: #fff;
+   padding: 5px 20px;
+   border: 1px solid transparent;
+   transition: 0.6s ease;
+}
+
+ul li a:hover{
+   background-color: #fff;
+   color: #000;
+}
+
+ul li.active a{
+   background-color: #fff;
+   color: #000;
+}
+
+
+
+.main{
+max-width:1400px;
+margin: auto;
+}
+
+
+
+.btn{
+border: 1px solid #fff;
+padding: 10px 30px;
+color: #fff;
+text-decoration: none;
+transition: 0.6s ease;
+}
+
+.btn:hover{
+   background-color: #fff;
+   color: #000;
+}
+
+.title{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+color: #fff;
+}
+
+.bx{
+    background-color: transparent;
+    border: 3px solid #fff;
+    width: 159%;
+    height: auto;
+}
+
+.tf{
+    margin-top: 6px;
+    margin-left: 10%;
+    paddding:10px;
+}
+p{
+font-size:20px;
+color: #fff;
+}
+input{
+border: 1px solid #000080;
+    width: 80%;
+    height: 25px;
+}
+input.nxt{
+    width: 40%;
+    height: 25px;
+    margin-left: 27%;
+    background-color: dodgerblue;
+    color: #fff;
+    font-family: inherit;
+    font-size: larger;
+
+}
+</style>
+</head>
+<body background="mbg.png">
+	<div class="bg">
+		
+		<div class="list">
+			<ul>
+          <li><a href="#">Home</a></li>
+          <li class="active"><a href="#">Sign In</a></li>
+          <li><a href="#">Register</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+    </div>
+    <div class="title">
+      <div class="bx">
+<div class="tf">
+<p>User Name:</p><input type="text">
+<p>Password:</p><input type="password">
+<input class="nxt" type="button" value="Next">
+</div>
+</div>
+      </div>
+      
+	</div>
+</body>
+</html>

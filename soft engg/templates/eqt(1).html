@@ -1,0 +1,120 @@
+<html>
+<head><title>Chemistry Help
+</title>
+<style type="text/css">
+	body{
+   height: 100vh;
+   background-size: cover;
+   background-position: center;
+	}
+	*{
+   margin: 0;
+   padding: 0;
+   font-family: Times New Roman;
+}
+
+
+ul{
+   float: right;
+   list-style-type: none;
+   margin-top: 20px;
+}
+
+ul li{
+   display: inline-block; 
+}
+
+ul li a{
+   text-decoration: none;
+   color: #fff;
+   padding: 5px 20px;
+   border: 1px solid transparent;
+   transition: 0.6s ease;
+}
+
+ul li a:hover{
+   background-color: #fff;
+   color: #000;
+}
+
+ul li.active a{
+   background-color: #fff;
+   color: #000;
+}
+
+
+
+.main{
+max-width:1400px;
+margin: auto;
+}
+
+.button{
+position: absolute;
+top: 71%;
+left: 50%;
+transform: translate(-50%,-50%);
+color: #fff;
+}
+
+.btn{
+border: 1px solid #fff;
+padding: 10px 30px;
+color: #fff;
+text-decoration: none;
+transition: 0.6s ease;
+}
+
+.btn:hover{
+   background-color: #fff;
+   color: #000;
+}
+
+.title{
+position: absolute;
+    color: #fff;
+    margin-top: 18%;
+    margin-left: 18%;
+    display: flex;
+}
+.reac{
+    display: grid;
+}
+.sl{
+  background: transparent;
+}
+</style>
+</head>
+<body background="nbg.png">
+	<div class="bg">
+		
+		<div class="list">
+			<ul>
+          <li class="active"><a href="#">Equation</a></li>
+            <li><a href="#">Home</a></li>
+          <li><a href="#">Sign In</a></li>
+          <li><a href="#">Register</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+    </div>
+    <div class="title">
+      <div class="reac"><select class="sl" name="r1" id="r1"><option>choose a reactant</option><!--more options here--></select><input class="sl" type="text" id="w1" name="w1" placeholder="weigth 1"></div>
+      <div class="reac">
+      <select class="sl" name="r2" id="r2"><option>choose a reactant</option><!--more options here--></select>
+      <input class="sl" type="text" id="w2" name="w2" placeholder="weigth 2"></div>
+      <div class="reac">
+      <select class="sl" name="cat" id="cat"><option>choose a catalyst</option><!--more options here--></select>
+      <img src="ar1.png">
+    </div>
+     <div class="reac"><select class="sl" name="p1" id="p1"><option>product</option><!--more options here--></select><input class="sl" type="text" id="w3" name="w3" placeholder="weigth 3"></div>
+      <div class="reac">
+      <select class="sl" name="ex" id="ex"><option>extra info</option><!--more options here--></select>
+    </div>
+    </div>
+    
+	</div>
+  <button class="button">
+      <a href="#" class="btn">Reset</a>
+      </button>
+</body>
+</html>

@@ -1,0 +1,1 @@
+flask -A mainServer.py --debug run

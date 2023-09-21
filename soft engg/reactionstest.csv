@@ -1,0 +1,4 @@
+ID,reactant1,count1,reactant2,count2,product,count3,conditions,extra
+1,CH4,1,Cl2,1,CClH3,1,sunlight,free radical mechanism
+2,CH4,1,SO2Cl2,1,CClH3,1,Solvent-CCl4 or CH2Cl2,
+3,C2H6,1,Cl2,1,C2ClH5,1,sunlight,free radical mechanism
